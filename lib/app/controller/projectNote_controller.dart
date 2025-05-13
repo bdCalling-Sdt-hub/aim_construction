@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:aim_construction/app/data/api_constants.dart';
 import 'package:aim_construction/app/model/getNoteDetailById_model.dart';
 import 'package:aim_construction/app/routes/app_pages.dart';
@@ -23,7 +22,7 @@ class ProjectNoteController extends GetxController {
 
   Future<void> pickFileFromDevice() async {
     try {
-      // Pick multiple images or files (assuming you are using an image picker that supports multiple media)
+      // Pick multiple images or files
       final List<XFile>? returnFiles = await picker
           .pickMultipleMedia(); // This needs the correct package
 
