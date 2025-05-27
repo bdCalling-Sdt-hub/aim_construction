@@ -15,7 +15,7 @@ import 'package:image_picker/image_picker.dart';
 class ProjectNoteController extends GetxController {
 
 
-//================= pickFileFromDevice
+//================= PickFileFromDevice
   ImagePicker picker = ImagePicker();
   RxList<String> images = <String>[].obs;
   RxList<String> file = <String>[].obs;
@@ -23,8 +23,7 @@ class ProjectNoteController extends GetxController {
   Future<void> pickFileFromDevice() async {
     try {
       // Pick multiple images or files
-      final List<XFile>? returnFiles = await picker
-          .pickMultipleMedia(); // This needs the correct package
+      final List<XFile>? returnFiles = await picker.pickMultipleMedia();
 
       // Check if no files were selected
       if (returnFiles == null || returnFiles.isEmpty) {
